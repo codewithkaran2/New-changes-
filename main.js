@@ -122,3 +122,14 @@ function startGame() {
 window.selectDuoMode = selectDuoMode;
 window.selectSurvivalMode = selectSurvivalMode;
 window.startGame = startGame;
+
+// -- Fullscreen toggle --
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+
+window.toggleFullScreen = toggleFullScreen;
